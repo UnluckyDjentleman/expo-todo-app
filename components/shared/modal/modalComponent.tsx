@@ -106,7 +106,7 @@ export default function ModalComponent({item, isOpened, setIsOpened}:{item: Todo
                         </Button>
                     </Form>
                     <Flex style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 20, backgroundColor: 'transparent' }}>
-                            <Button onPress={() => setIsOpened(false)} style={styles.cancelButton}>
+                            <Button type='primary' onPress={() => setIsOpened(false)} style={styles.cancelButton}>
                                 Cancel
                             </Button>
                             <Button type="primary" onPress={handleSubmit}  style={styles.submitButton}>
@@ -140,6 +140,7 @@ const styles = StyleSheet.create({
     cancelButton: {
         backgroundColor: '#E44C4C',
         fontSize: 16,
+        borderColor: '#E44C4C',
         borderTopEndRadius: 25, 
         borderBottomEndRadius: 25, 
         borderTopStartRadius: 25, 
