@@ -1,7 +1,5 @@
-import { Text } from "react-native"
+import { Text } from "react-native";
 
-export default function Loader(){
-    return (
-       <Text>Loading...</Text>
-    )
+export default function Loader() {
+  return <Text>Loading...</Text>;
 }
