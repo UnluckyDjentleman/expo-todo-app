@@ -1,4 +1,4 @@
-import { Card, Checkbox, Grid, List, Toast, } from "@ant-design/react-native";
+import { Card, Checkbox, Toast,  Flex } from "@ant-design/react-native";
 import TodoItem from "../../constants/todoItem";
 import DeleteButton from "../shared/button/deleteButton";
 import EditButton from "../shared/button/editButton";
@@ -10,9 +10,9 @@ import { useState } from "react";
 import ModalComponent from "../shared/modal/modalComponent";
 import { Status } from "../../constants/status";
 import { UpdateTodoItem } from "../../utils/functions/updateTodoItem";
-import { Flex } from "@ant-design/react-native";
-import { Text, View } from "react-native";
-import { StyleSheet } from "react-native";
+
+import { Text, View , StyleSheet } from "react-native";
+
 
 export default function TodoItemComponent({item}:{item: TodoItem}){
     const dispatch = useAppDispatch();

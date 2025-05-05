@@ -1,9 +1,9 @@
 import { Button, Flex } from "@ant-design/react-native";
 import { DatePickerModal } from "react-native-paper-dates";
 import { useState } from "react";
-import {Text, View} from 'react-native';
+import {Text, View, StyleSheet } from 'react-native';
 import {MaterialIcons} from '@expo/vector-icons';
-import { StyleSheet } from "react-native";
+
 
 export default function DatePick({placeholder, value, setValue}:{placeholder: string, 
     value:Date|undefined, 

@@ -1,6 +1,6 @@
 import { Button } from "@ant-design/react-native";
-import { Text } from "react-native";
-import { StyleSheet } from "react-native";
+import { Text , StyleSheet } from "react-native";
+
 
 export default function ButtonComponent({ text, onClick }:{text: string, onClick:()=>void}) {
     return (

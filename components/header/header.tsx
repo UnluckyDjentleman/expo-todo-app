@@ -4,7 +4,6 @@ import ButtonComponent from "../shared/button/buttonComponent";
 import { useAppDispatch, useAppSelector } from "../../utils/hooks/useRedux";
 import { setFilter } from "../../store/reducers/filterReducer";
 import { View,StyleSheet } from "react-native";
-import { Flex, Grid } from "@ant-design/react-native";
 
 export default function Header() {
     const filters = useAppSelector(state => state.filter.filter);

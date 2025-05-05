@@ -1,5 +1,4 @@
 import { Status } from "../../../constants/status";
-import { StyleSheet } from "react-native";
 import { Text } from "react-native";
 import { Menu, Button } from "react-native-paper";
 import { useState } from "react";
@@ -48,25 +47,3 @@ export default function SelectComponent({value, onChange}:{value: Status|undefin
     </Menu>
   );
 }
-
-const styles = StyleSheet.create({
-  picker: {
-    width: '100%',
-    marginBottom: 10,
-    borderColor: 'rgb(240, 219, 255)'
-  },
-  listItem: {
-    borderWidth: 1,
-    borderColor: '#d9d9d9',
-    borderRadius: 4,
-    paddingVertical: 12
-  },
-  selectedValue: {
-    color: '#333',
-    fontSize: 16
-  },
-  placeholder: {
-    color: '#bfbfbf',
-    fontSize: 16
-  }
-});
